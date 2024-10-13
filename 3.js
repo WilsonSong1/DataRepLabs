@@ -15,5 +15,16 @@ const addTask = (task)=>{
     console.log(tasks.length);
 }
 
-//calling function
+//3(c)
+const listAllTasks = ()=>{
+    //3(c) i.
+    //Iterating over all the tasks in the array
+    tasks.forEach((item)=>{
+        //3(c) ii.
+        //Printing each array in the console
+        console.log(item);
+    })
+}
+//Calling function
 addTask("Sports");
+listAllTasks();
