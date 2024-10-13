@@ -25,6 +25,24 @@ const listAllTasks = ()=>{
         console.log(item);
     })
 }
+
+//3(d) i. delete task function
+const deleteTask = (task)=>{
+    let index = tasks.indexOf(task);
+    if(index > -1){
+        //3(d) ii.
+        tasks.splice(index, 1);
+        //3(d) iii.
+        console.log(task + " has been removed from array");
+    }
+    else{
+        console.log(task + " has not been removed from array")
+    }
+    //3(d) iv.
+    console.log(tasks.length)
+}
+
 //Calling function
 addTask("Sports");
 listAllTasks();
+deleteTask("Shopping");
